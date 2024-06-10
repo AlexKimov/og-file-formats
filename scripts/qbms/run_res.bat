@@ -1,0 +1,1 @@
+F:\git\qbms\quickbms.exe -K -d -e -Y -F "*.res" unpack_res.bms "F:\Games\Hellforces" unpacked_res

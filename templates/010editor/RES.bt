@@ -1,0 +1,54 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+uint boneNum;
+uint frameNum;
+uint rotKeyNum;
+uint posKeyNum;
+
+struct {
+  float x;
+  float y;
+  float z; 
+  float w;
+} rot[rotKeyNum];
+
+struct {
+  float x;
+  float y;
+  float z; 
+} pos[posKeyNum];
+
+uint a;
+struct {
+  float x;
+  float y;
+  float z;
+  float x;
+  float y;
+  uint z;
+  float x;
+  float y;
+  float z; 
+  float y;
+  float z; 
+} n[256];
+
+struct {
+  char name[64];
+  char name2[64];
+
+  uint posKeyIndex[frameNum];
+  uint rotKeyIndex[frameNum];
+  byte unk[61];
+} bone[boneNum] <optimize=false>;

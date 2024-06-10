@@ -1,0 +1,20 @@
+get NUM LONG
+
+comtype zlib
+
+for i = 0 < NUM
+    getDString FNAME 128
+    string FNAME - 1
+    get OFFS LONG
+    get SIZE LONG
+    
+    SavePos POS
+    
+    GoTo OFFS
+    get UNPACKED_SIZE LONG 
+    math OFFS += 4
+    math SIZE -= 4    
+    CLog FNAME OFFS SIZE UNPACKED_SIZE
+    
+    GoTo POS
+next i

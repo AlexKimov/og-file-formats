@@ -1,0 +1,101 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+uint a;
+string name;
+uint a;
+uint faceNum;
+uint vertexNum;
+uint rNum;
+uint offset;
+uint offset;
+uint offset;
+uint kkNum0;
+uint kkNum;
+
+
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+
+float a;
+float a;
+
+struct {
+  float x;
+  float y;
+  float z; 
+} vertex[vertexNum];
+
+struct {
+  float x;
+  float y;
+  float z; 
+} normal[vertexNum];
+
+struct {
+  uint16 i1;
+  uint16 i2;
+  uint16 i3; 
+} face[faceNum];
+
+struct {
+  float x;
+  float y; 
+} tc[vertexNum];
+
+struct {
+  float x;
+  float y;
+  float z; 
+  float x;
+  float y;
+  float z;
+} r1[vertexNum];
+
+struct {
+  float x;
+  float y;
+  float z; 
+  float z; 
+} r2[kkNum0];
+
+struct {
+  float x;
+  float y;
+  float z; 
+} r21[kkNum];
+
+
+struct {
+  uint num1;
+  uint num2;
+  float s[19];
+  char bname[64];
+  char parentName[64];
+  float r3[10];
+  int parentIndex;
+  uint unk;
+  float r4[12];
+  float r6[10];
+
+  uint16 a2[num2];
+  uint n[3];
+}  bone[kkNum] <optimize=false>;
