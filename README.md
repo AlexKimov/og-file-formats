@@ -12,13 +12,12 @@
 
 ## Форматы
 
-#### Чистильщик (2004)
+Чистильщик (2004)
 
 | № | Формат  | Шаблон (010 Editor) |  Описание   |
 | :-- | :------- | :-- |  :-- | 
-|  **1**  | ANM | [ANM.bt](templates/010editor/ANM.bt)  | анимации для трехмерных моделей | 
+|  **1**  | ANM | [RES.bt](templates/010editor/ANM.bt)  | анимации для трехмерных моделей | 
 |  **2**  | MSH | [MSH.bt](templates/010editor/MSH.bt)  | трехмерные модели | 
-|  **3**  | RES | [RES.bt](templates/010editor/RES.bt)  | ресурсы игры | 
 
     Как использовать скрипты  010Editor
     0. Установить 010Editor.
@@ -29,9 +28,11 @@
 
 #### QuickBms
 
+Чистильщик (2004) / Пограничье (2005)
+
 | № | Скрипт | Описание  |
 | :-- | :------- | :-------  | 
-| **1**  | [unpack_res.bms](scripts/qbms/unpack_res.bms)  | распаковка архивов игры VFS |   
+| **1**  | [unpack_res.bms](scripts/qbms/unpack_res.bms)  | распаковка архивов игры RES |   
 
     Как использовать quickbms скрипты
     1. Нужен quickbms https://aluigi.altervista.org/quickbms.htm
