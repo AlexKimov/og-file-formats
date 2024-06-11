@@ -1,0 +1,97 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+uint a;
+char name[12];
+uint a;
+uint vertexNum;
+uint faceNum;
+uint rNum;
+uint offset;
+uint boneNum;
+uint offset;
+uint kkNum0;
+uint kkNum;
+uint kkNum3;
+
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+float a;
+
+float a;
+float a;
+
+struct {
+  float x;
+  float y;
+  float z; 
+  float x;
+  float y;
+  float z; 
+} vertex[vertexNum];
+
+struct {
+  uint16 i1;
+  uint16 i2;
+  uint16 i3; 
+} face[faceNum];
+
+struct {
+  float x;
+  float y; 
+} tc[rNum];
+
+struct {
+  ubyte a[2];
+} rr2[rNum];
+
+struct {
+  ubyte a;
+} rr2t[vertexNum];
+
+struct {
+  float x;
+  float x;
+  float x;
+  float x;
+} r213[kkNum];
+
+struct {
+  float x;
+  float x;
+  float x;
+} r21[kkNum3];
+
+struct {
+  char bname[64];
+  char parentName[64];
+  float r3[16];
+  int num;
+  uint16 a[num];
+  struct {
+    uint b;
+    uint b;
+  } yu[kkNum0];
+}  bone[boneNum] <optimize=false>;
+
+struct {
+  ubyte a;
+  char name[128];
+} material;
